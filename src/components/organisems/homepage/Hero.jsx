@@ -9,7 +9,7 @@ const Hero = (props) => {
   const messages = ["Full Stack Developer", "Web Developer", "Programmer"];
   const typedMessage = TypingEffect(messages);
   return (
-    <section id={id} className="lg:h-full text-white w-full -mt-4 lg:mt-5">
+    <section id={id} className="lg:h-full text-white w-full mt-3 lg:mt-7">
       <div className="lg:h-full">
         <div className="relative bottom-2 lg:-bottom-49 p-6 ">
           <Links />
