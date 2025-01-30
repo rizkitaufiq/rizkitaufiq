@@ -27,9 +27,9 @@ const Hero = (props) => {
                     <p className="text-[8px] lg:text-[15px]">
                       Bachelor of computer graduate with a strong foundation in
                       back-end development. Experienced as a Web Developer who
-                      works with JavaScript, PHP, CI and MySQL. Attending
-                      Full-Stack Web Developer bootcamp program for deepening
-                      skills in Web Developer.
+                      works with JavaScript, PHP, CI and MySQL. Attending Full
+                      Stack Developer bootcamp program for deepening skills in
+                      Web Developer.
                     </p>
                   </article>
                 </div>
