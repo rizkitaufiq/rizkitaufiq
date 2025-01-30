@@ -17,7 +17,7 @@ const Experience = (props) => {
           <Timeline
             textDatePosition="text-right"
             textDate="2023 - Present"
-            textHeader="Full-Stack Developer | Frelance"
+            textHeader="Full-Stack Developer | Freelance"
             textContent="Develop website-based applications based on client orders."
             position="timeline-start"
           />
