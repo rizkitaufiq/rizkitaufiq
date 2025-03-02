@@ -13,7 +13,7 @@ const Hero = (props) => {
       <div className="lg:h-full">
         <div className="relative bottom-2 lg:-bottom-49 p-6 ">
           <Links />
-          <div className="flex flex-column w-full lg:px-20">
+          <div className="flex flex-column w-full lg:px-20 gap-3 lg:gap-1">
             <div className="flex justify-center items-center w-[50%]">
               <div className="mb-6 lg:mb-10 w-full max-w-sm lg:max-w-3xl ">
                 <div className="font-bold text-[10px] lg:text-[30px] lg:mt-10">
@@ -24,12 +24,12 @@ const Hero = (props) => {
                     I`m a <span className="text-primary"> {typedMessage}</span>
                   </p>
                   <article>
-                    <p className="text-[8px] lg:text-[15px]">
-                      Bachelor of computer graduate with a strong foundation in
-                      back-end development. Experienced as a Web Developer who
-                      works with JavaScript, PHP, CI and MySQL. Attending Full
-                      Stack Developer bootcamp program for deepening skills in
-                      Web Developer.
+                    <p className="text-[8px] lg:text-[15px] text-justify">
+                      Bachelor of computer graduate experience as a Full Stack
+                      Developer, working with HTML, CSS, JavaScript, PHP, and
+                      MySQL. I attended a Full Stack Developer bootcamp program
+                      to deepen my skills in web development and also has a
+                      strong foundation in Back End development.
                     </p>
                   </article>
                 </div>

@@ -9,7 +9,7 @@ const Navbar = () => {
     // { name: "Education", path: "education" },
   ];
   return (
-    <nav className="fixed bg-black top-0 z-10 flex font-bold text-white w-full p-6 lg:p-12 text-[8px] lg:text-[22px]">
+    <nav className="fixed bg-black top-0 z-30 flex font-bold text-white w-full p-6 lg:p-12 text-[8px] lg:text-[22px]">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center lg:space-x-4 lg:px-14">
           <h1>

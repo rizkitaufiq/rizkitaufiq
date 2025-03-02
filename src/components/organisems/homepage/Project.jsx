@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import CardBox from "../../molecules/CardBox";
+import store from "../../../store/store";
 
 const Project = (props) => {
+  const { projects } = store();
   const { id } = props;
   return (
     <section
@@ -13,45 +15,21 @@ const Project = (props) => {
       </div>
 
       <div className="flex flex-wrap gap-10 lg:gap-10">
-        <CardBox
-          bgCard="bg-slate-700"
-          textHeader="Chill"
-          textContent="Chill is a web-based application designed to
-          give users access to a an extensive library of
-          movies and TV shows from their devices. Chill
-          offers a user-friendly interface that allows
-          users to search for movies and TV shows and
-          start watching instantly.
-          "
-          link="https://mission-5-reactjs-chill.vercel.app/"
-        >
-          <img
-            src="images/homepage/content/project/Chill-desktop.PNG"
-            alt="image"
-            className="w-[280px] h-[100px] lg:w-[500px] lg:h-[200px]"
-          />
-        </CardBox>
-
-        <CardBox
-          bgCard="bg-white"
-          textHeader="E-Commerce"
-          textContent="Product List Detailed description,
-          images and specifications of
-          product or services. Categorization
-          and filtering options to help users.find what they’re looking for. Save
-          the product you want Wishlist. Cart
-          allows users to add and manage
-          selected items before proceeding to
-          Checkout.
-                  "
-          link="https://github.com/rizkitaufiq/simple_ecommerce_django5"
-        >
-          <img
-            src="images/homepage/content/project/SS2.PNG"
-            alt="image"
-            className="w-[280px] h-[100px] lg:w-[500px] lg:h-[200px]"
-          />
-        </CardBox>
+        {projects.map((project, index) => (
+          <CardBox
+            key={index}
+            bgCard="bg-slate-700"
+            textHeader={project.title}
+            textContent={project.content}
+            link={project.url}
+          >
+            <img
+              src={project.image}
+              alt="image"
+              className="w-[280px] h-[100px] lg:w-[500px] lg:h-[200px]"
+            />
+          </CardBox>
+        ))}
       </div>
       <footer className="mt-5">
         <a

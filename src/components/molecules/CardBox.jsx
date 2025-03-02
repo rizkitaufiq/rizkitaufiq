@@ -11,7 +11,7 @@ const CardBox = (props) => {
         <h2 className="card-title text-secondary text-base md:text-lg lg:text-xl">
           {textHeader}
         </h2>
-        <p className="text-white text-[8px] md:text-[10px] lg:text-[12px]">
+        <p className="text-white text-[8px] md:text-[10px] lg:text-[12px] text-justify">
           {textContent}
         </p>
         <div className="card-actions justify-end">
